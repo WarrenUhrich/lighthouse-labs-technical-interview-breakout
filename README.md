@@ -1,4 +1,4 @@
-# Lighthouse Labs | Technical Interview
+# Lighthouse Labs | Technical Interview Breakout
 
 * [ ] Talking the Talk
 * [ ] Walking the Walk
