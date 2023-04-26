@@ -1,6 +1,6 @@
 # Lighthouse Labs | Technical Interview
 
-[GitHub Repository Branch](#) | [Vimeo Video Recording](#)
+[GitHub Repository Branch](https://github.com/WarrenUhrich/lighthouse-labs-technical-interview-breakout/tree/2023.04.26-web-flex-20march2023) | [Vimeo Video Recording](https://vimeo.com/821457573/cebd489ca0?share=copy)
 
 * [X] Talking the Talk
 * [X] Walking the Walk
