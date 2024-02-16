@@ -15,3 +15,19 @@ Keep in-mind in a TI:
   * Processing
     * Break the problem into tiny steps
     * Pseudo-code
+  
+What is the time complexity of your solution?
+* **Constant Time: O(1)** - The algorithm's execution time is constant and does not depend on the input size.
+* **Linear Time: O(n)** - The algorithm's execution time increases linearly with the size of the input.
+* **Exponential Time: O(2^n)** - The algorithm's execution time doubles with each addition to the input size.
+* **Logarithmic Time: O(log n)** - The algorithm's execution time increases logarithmically with the size of the input, which means the time taken grows slowly as the input size increases.
+
+Big things to practice:
+* Getting familiar with your dictionary
+  * What is a variable? var, const, let
+  * What is a function? parameter, argument, return
+  * What is JavaScript? programming language, interpretor, compiled
+  * What is NodeJS? runtime
+* String manipulation
+* Array manipulation
+* Object manipulation
