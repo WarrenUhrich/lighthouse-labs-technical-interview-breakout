@@ -1,5 +1,7 @@
 # Lighthouse Labs | Technical Interview Preparation Breakout
 
+[GitHub Repository Branch](https://github.com/WarrenUhrich/lighthouse-labs-technical-interview-breakout/tree/2024.02.16-web-immersive-national-5february2024) | [Vimeo Video Recording](https://vimeo.com/913853311/30ae9b709b?share=copy)
+
 Keep in-mind in a TI:
 * White-board, you won't have access to Google/code-editor...
   * You hit a wall and aren't sure how to proceed.
