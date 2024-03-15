@@ -1,0 +1,60 @@
+// Given a string, find out which vowels are used in it.
+// We don't need count the number of times each vowel was used...
+// Just WHICH unique vowels were used.
+
+// 1. INPUT
+    * string: 'apple'
+// 2. OUTPUT
+    * ask: maybe an array? or a string? -> let's assume they answer: an array would be great
+    * array of characters: ['a', 'e']
+// 3. PROCESSING
+    * ask: is this check case-sensitive? -> let's assume they answer: the check should be completely case-insensitive
+    * ask: is y included? -> let's assume they answer: YES!
+    * PROCESSING STEPS:
+        1. Convert incoming string to lowerCase!
+        2. Build an array of "vowels" to check
+        3. Create an empty array to store our "foundVowels"
+        4. Loop through the string...
+        5. Check each letter to see if it is a vowel or not
+        6. If it is a vowel, push it into a new "foundVowels" array!
+        7. return foundVowels array
+
+/**
+ * Find out which vowels are used in a string.
+ * 
+ * @param {string} text - String to check for vowels.
+ * @return {Array<string>} - Array of vowels found.
+ */
+const findVowelsInString = function(text) { // 1. INPUT
+    const foundVowels = [];
+
+    // 3. PROCESSING
+        // ✅ 1. Convert incoming string to lowerCase!
+        const lowerCaseText = text.toLowerCase(); // Hey I forgot what the method is, but I would double-check on MDN.
+
+        // ✅ 2. Build an array of "vowels" to check
+        const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+
+        // ✅ 3. Create an empty array to store our "foundVowels"
+
+        // ✅ 4. Loop through the string...
+        for(const letter of lowerCaseText) {
+
+            // ✅ 5. Check each letter to see if it is a vowel or not
+            if(vowels.include(letter) && !foundVowels.includes(letter)) {
+                
+                // ✅ 6. If it is a vowel, push it into a new "foundVowels" array!
+                foundVowels.push(letter);
+            }
+        }
+
+        // ✅ 7. return foundVowels array
+
+    return foundVowels; // 2. OUTPUT
+};
+
+let result = findVowelsInString('apple');
+console.log(result); // ['a', 'e']
+
+result = findVowelsInString('Hello, World!');
+console.log(result); // ['e', 'o']
