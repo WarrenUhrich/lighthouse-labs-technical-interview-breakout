@@ -1,5 +1,7 @@
 # Lighthouse Labs | Technical Interview Preparation
 
+[GitHub Repository Branch](https://github.com/WarrenUhrich/lighthouse-labs-technical-interview-breakout/tree/2024-03-27-web-flex-19february2024) | [Vimeo Video Recording](https://vimeo.com/928213545/4bda4fb473?share=copy)
+
 * White-board interview problems...
     * Verbalize your process
     * Ask questions - ask for clarifications
@@ -74,10 +76,15 @@ console.log('answer:', answer);
 
 /**
  * GET /sign-in
- * Displays the sign-in page. 
+ * Displays the sign-in page and form.
  */
 app.get('/sign-in', (req, res) => {});
 
-
+/**
+ * POST /sign-in
+ * Handles the sign-in form submission.
+ * Redirects to /urls on success.
+ */
+app.post('/sign-in', (req, res) => {});
 
 ```
