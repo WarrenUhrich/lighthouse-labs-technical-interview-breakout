@@ -1,0 +1,70 @@
+// Given a string, find out which vowels are used in it.
+// We don't need count the number of times each vowel was used...
+// Just WHICH unique vowels were used.
+
+// Could the input be a string with numbers/letters? Sure!
+// Blank spaces? Yep!
+// What should the result be? Array of strings!
+// I don't need to repeat them? Nope! Just one of any vowel you find.
+// Should it be upper or lowercase? Please use only lowercase in the return
+// Will the input be upper or lower? Could be any!
+// What if there is an empty string? Just an empty array!
+// What should we do if it is not a string? Just return an empty array.
+
+/**
+ * @param {string} str - The text we want to parse.
+ * @return {Array<string>} - Array of vowels.
+ */
+const findVowelsInString = (str) => {
+    const strLowerCase = str.toLowerCase();
+
+    const obj = {};
+    const vowels = {
+        a: 'a',
+        e: 'e',
+        i: 'i',
+        o: 'o',
+        u: 'u'
+    };
+
+    if(!str) {
+        return [];
+    }
+
+    if(typeof str !== 'string') {
+        return [];
+    }
+
+    for(const char of strLowerCase) {
+        if(vowels[char]) {
+            if(!obj[char]) {
+                obj[char] = char;
+            }
+        }
+    }
+
+    // Convert obj to arr
+    const arr = [];
+    for(const vowel in obj) {
+        arr.push(vowel);
+    }
+
+    // My logic steps:
+    // 1. Loop through the string? (Maybe convert to a list?)
+    // 2. During loop, `if` it is a vowel (maybe there  is a method?)
+    //    Is this letter in my vowel object? (might have to loop through these arrays)
+    // 3. If it is a vowel, push into my array (check if already in-array.)
+
+    // Ideas:
+    // Object with the vowels.
+    // Object with the result.
+    // Finalize with an array.
+    // (In Python you can construct an array using Set) - Set forces one of each/unique value.
+
+    return arr;
+};
+
+let myResult = findVowelsInString(''); // []
+myResult = findVowelsInString('LIGHTHOUSE LABS'); // ['i', 'o', 'u', 'e', 'a']
+myResult = findVowelsInString('lighthosue labs'); // ['i', 'o', 'u', 'e', 'a']
+myResult = findVowelsInString(3); // []
